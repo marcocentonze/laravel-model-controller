@@ -11,6 +11,6 @@ class PageController extends Controller
     public function index()
     {
 
-        return view('home', ['movies' => Movie::all(), 'heading' => 'Our Movies']);
+        return view('welcome', ['movies' => Movie::all(), 'heading' => 'Our Movies']);
     }
 }
